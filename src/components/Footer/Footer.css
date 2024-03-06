@@ -62,11 +62,18 @@
     justify-content: space-around;
     width: 100%;
     height: auto;
+
+    a:hover {
+        width: auto;
+        height: 120%;
+    }
 }
 
 .icon {
     width: auto;
     height: 80%;
+
+
 }
 /*------------------------------------------------------------------------------lower Footer______*/
 .lowerFooter {
