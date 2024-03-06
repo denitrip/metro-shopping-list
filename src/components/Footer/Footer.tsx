@@ -17,7 +17,7 @@ export const FooterComponent: React.FC = (color) => {
                     </div>
 
                     <div class="socialMedia">
-                        <h3>M.d Apprentices on Social Web</h3>
+                        <h3>MDapprentices on Social Web</h3>
                         <div class="icons">
                             <img class="icon" src="facebook-icon.png"/>
                             <img class="icon" src="insta-icon.png"/>
@@ -30,12 +30,12 @@ export const FooterComponent: React.FC = (color) => {
                 </div>
 
                 <div className='lowerFooter'>
-                    <div class="margin_left">© M.d Apprentices, 2024</div>
-                    <div class="margin_right">
-                        <div><a href="Kontakt.html">AGB</a></div>
+                    <div class="lowerFooterLeft">© MDapprentices, 2024</div>
+                    <div class="lowerFooterRight">
+                        <div><a href="Kontakt.html">GTCs</a></div>
                         <div><a href="Kontakt.html">Cookies</a></div>
-                        <div><a href="Kontakt.html">Impressum</a></div>
-                        <div><a href="Kontakt.html">Kontakt</a></div>
+                        <div><a href="Kontakt.html">Imprint</a></div>
+                        <div><a href="Kontakt.html">Contact</a></div>
                     </div>
                 </div>
             </div>
