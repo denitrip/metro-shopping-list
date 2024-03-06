@@ -10,7 +10,7 @@
 .upperFooter {
     display: flex;
     justify-content: space-between;
-    background-color: #525A73;
+    background-color: #051428;
     color: white;
     height: 150px;
 }
@@ -81,18 +81,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #191970;
+    background-color: #043254;
     padding: 10px;
     font-family: arial;
     font-size: 12px;
 }
 
 .lowerFooter > div {
-    color: #FFC900;
+
 }
 
 .lowerFooterLeft {
     margin-left: 35px;
+    background-color: #647deb;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
 }
 .lowerFooterRight {
     margin-right: 2%;
@@ -107,8 +111,10 @@
     }
 
     a:hover {
-        color: #FFC900;
-        text-decoration: underline;
+        background-color: #05dcc8;
+        color: black;
+        border-radius: 5px;
+        padding: 5px;
     }
     margin-left: 20px;
 }
