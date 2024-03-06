@@ -58,12 +58,12 @@ export const FooterComponent: React.FC = (color) => {
                     <div class="socialMedia">
                         <h4>MDapprentices on Social Web</h4>
                         <div class="icons">
-                            <img class="icon" src="facebook-icon.png"/>
-                            <img class="icon" src="insta-icon.png"/>
-                            <img class="icon" src="linkedin-icon.png"/>
-                            <img class="icon" src="github-icon.png"/>
-                            <img class="icon" src="share-icon.png"/>
-                            <img class="icon" src="troll-icon.png"/>
+                            <a href="https://www.facebook.com/METRO.digitalMD/"><img class="icon" src="facebook-icon.png"/></a>
+                            <a href="https://www.instagram.com/metro.digital/?hl=de"><img class="icon" src="insta-icon.png"/></a>
+                            <a href="https://de.linkedin.com/company/metro-digitalmd"><img class="icon" src="linkedin-icon.png"/></a>
+                            <a href="https://github.com/denitrip/metro-shopping-list"><img class="icon" src="github-icon.png"/></a>
+                            <a href="sharing-img.png"><img class="icon" src="share-icon.png"/></a>
+                            <a href="troll-img.jpg"><img class="icon" src="troll-icon.png"/></a>
                         </div>
                     </div>
                 </div>
