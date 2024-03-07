@@ -8,13 +8,24 @@ export const HeaderComponent: React.FC = () => {
 
     return <div className='header__container'>
 
-        <div className="position"> <a href="http://localhost:5173/"> <img className="MDApprenticeship" src="PicsArt_ (1).png"/> </a>
+
+        <div className="lupa">
+            <div className="menuicon"><img className="colormolor" src="menu icon.png"/></div>
+            <div className="position"><a href="http://localhost:5173/"> <img className="MDApprenticeship" src="PicsArt_ (1).png"/> </a> </div>
         </div>
-        <div className="header__container1"> Düsseldorf</div>
-        <div className="header__container1"> Düsseldorf Hi</div>
+
+
+        <div className="header__container1 MetroDigital"><a href="https://metro.digital/"> <img className="MD"
+                                                                                                src="unnamed.png"/> </a>
+        </div>
+
+        <div className="header__container1 flexmex"><a href="https://www.metro.de/"> <img src="MetroDeutschland.png"
+                                                                                          className="MetroDeutschland"/>
+        </a></div>
+
         <div className="LogInSignUp">
-            <div className="LogInMargin"> Log in</div>
-            <div className="SignUoMargin"> Sign Up</div>
+            <button className="buttonsize"> Log in</button>
+            <button className="buttonsize"> Sign Up</button>
         </div>
 
         {isLoginModalVisible && (<LoginModalComponent/>)}
