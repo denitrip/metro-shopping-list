@@ -4,12 +4,15 @@ import './ShoppingItemCard.css'
 
 type Props = {
     item: {
-        name: string;
+        skillname: string;
+        skillprogress: number;
     }
 }
 
 export const ShoppingCardComponent: React.FC<Props> = ({item}) => {
     return <div className='shoppingCardItem'>
-        {item.name}
+        <div className="title">{item.skillname}</div>
+        <div className="attributes">Progress: {item.skillprogress} of 10</div>
+        <div className="attributes">actual topic</div>
     </div>
 }
