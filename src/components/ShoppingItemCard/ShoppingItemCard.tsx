@@ -2,8 +2,14 @@ import React from 'react'
 
 import './ShoppingItemCard.css'
 
-export const ShoppingCardComponent: React.FC = () => {
+type Props = {
+    item: {
+        name: string;
+    }
+}
+
+export const ShoppingCardComponent: React.FC<Props> = ({item}) => {
     return <div className='shoppingCardItem'>
-        card content
+        {item.name}
     </div>
 }

@@ -11,7 +11,7 @@ export const HomePageComponent: React.FC = () => {
     return <div className='container'>
         <HeaderComponent/>
         <div className="container__body">
-            {shoppingItems.map(item => <ShoppingCardComponent/>)}
+            {shoppingItems.map(item => <ShoppingCardComponent item={item}/>)}
         </div>
         <FooterComponent/>
     </div>
