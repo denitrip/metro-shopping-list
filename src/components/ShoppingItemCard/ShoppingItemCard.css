@@ -6,10 +6,7 @@
     background-color: #051428;
     color: white;
     border-color: white;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 10%;
-    box-shadow: 10px 10px 10px #213547;
+    border-radius: 20px;
     /*display: flex;*/
 }
 
@@ -26,9 +23,34 @@
     font-size: xx-large;
     font-weight: bold;
 }
-.attributes {
+
+.statue {
     display: flex;
-    padding: 0 10%;
     justify-content: center;
     font-size: x-large;
+    color: #B4E745;
+}
+
+.topic {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-style: italic;
+    background-color: white;
+    color: black;
+    padding: 2% 0;
+    margin: 2% 10%;
+    border-radius: 5px;
+}
+
+.note {
+    height: 130px;
+    display: flex;
+    justify-content: start;
+    font-size: small;
+    background-color: white;
+    color: black;
+    padding: 0 5px;
+    margin: 2% 10%;
+    border-radius: 5px;
 }

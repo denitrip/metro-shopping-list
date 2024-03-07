@@ -12,7 +12,8 @@ type Props = {
 export const ShoppingCardComponent: React.FC<Props> = ({item}) => {
     return <div className='shoppingCardItem'>
         <div className="title">{item.skillname}</div>
-        <div className="attributes">Progress: {item.skillprogress} of 10</div>
-        <div className="attributes">actual topic</div>
+        <div className="statue">Progress: {item.skillprogress} of 10</div>
+        <div className="topic">"actual topic"</div>
+        <div className="note">Notes:</div>
     </div>
 }
