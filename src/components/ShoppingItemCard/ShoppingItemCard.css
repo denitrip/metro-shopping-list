@@ -16,7 +16,7 @@
 }
 
 
-.title {
+.cardTitle {
     display: flex;
     padding: 0 10%;
     justify-content: center;
@@ -24,31 +24,31 @@
     font-weight: bold;
 }
 
-.statue {
+.cardProgress {
     display: flex;
     justify-content: center;
     font-size: x-large;
     color: #B4E745;
 }
 
-.topic {
+.progressTopic {
     display: flex;
     justify-content: center;
     font-size: large;
     font-style: italic;
-    background-color: white;
+    background-color: #F3F3F3;
     color: black;
     padding: 2% 0;
     margin: 2% 10%;
     border-radius: 5px;
 }
 
-.note {
+.cardNote {
     height: 130px;
     display: flex;
     justify-content: start;
     font-size: small;
-    background-color: white;
+    background-color: #F3F3F3;
     color: black;
     padding: 0 5px;
     margin: 2% 10%;
