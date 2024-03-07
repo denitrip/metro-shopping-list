@@ -1,9 +1,9 @@
 .footer__container {
     color: white;
     position: relative;
-    height: 100%
+    height: 100%;
     width: 100%;
-    font-family: arial black;
+    font-family: arial black, serif;
     font-size: 14px;
 }
 /*------------------------------------------------------------------------------upper Footer______*/
@@ -30,7 +30,7 @@
     }
 
     ul li {
-        font-family: verdana;
+        font-family: verdana, serif;
         font-weight: 100;
         padding-left: 0;
     }
@@ -83,7 +83,7 @@
     justify-content: space-between;
     background-color: #043254;
     padding: 10px;
-    font-family: arial;
+    font-family: arial, serif;
     font-size: 12px;
 }
 

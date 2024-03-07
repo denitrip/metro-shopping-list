@@ -1,5 +1,87 @@
 .shoppingCardItem {
-    height: 200px;
-    width: 200px;
-    background-color: green;
+    height: 300px;
+    width: 400px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #051428;
+    color: white;
+    border-color: white;
+    border-radius: 20px;
+    display: flex;
+
+}
+
+/*.shoppingCardItem > div{
+    display: flex;
+    !*flex-wrap: wrap;*!
+
+}*/
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+}
+
+.sidebar {
+    display: flex;
+    width: fit-content;
+
+    a {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.xButton {
+    width: 60%;
+    height: min-content;
+}
+
+.cardTitle {
+    display: flex;
+    padding: 0 10%;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.cardProgress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressIcon {
+    width: 28px;
+    height: 28px;
+}
+
+.plusMinusButton{
+    width: 18px;
+    height: 18px;
+}
+
+.progressTopic {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-style: italic;
+    background-color: #F3F3F3;
+    color: black;
+    padding: 2% 0;
+    margin: 2% 5%;
+    border-radius: 5px;
+}
+
+.cardNote {
+    height: 140px;
+    display: flex;
+    justify-content: start;
+    font-size: small;
+    background-color: #F3F3F3;
+    color: black;
+    padding: 0 5px;
+    margin: 2% 5%;
+    border-radius: 5px;
 }

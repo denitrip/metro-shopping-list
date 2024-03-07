@@ -3,12 +3,14 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
 }
 
 .container__body {
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
   justify-content: space-around;
   align-items: center;
+  background-image: linear-gradient(white, #043254);
 }
