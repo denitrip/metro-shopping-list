@@ -6,13 +6,12 @@ import {FooterComponent} from "../../components/Footer/Footer";
 import './HomePage.css'
 
 export const HomePageComponent: React.FC = () => {
+    const shoppingItems = [{name: 'item1'}, {name: 'item2'}, {name: 'item3'}, {name: 'item4'}]
+
     return <div className='container'>
         <HeaderComponent/>
         <div className="container__body">
-            <ShoppingCardComponent/>
-            <ShoppingCardComponent/>
-            <ShoppingCardComponent/>
-            <ShoppingCardComponent/>
+            {shoppingItems.map(item => <ShoppingCardComponent/>)}
         </div>
         <FooterComponent/>
     </div>

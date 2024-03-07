@@ -1,13 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import './Header.css'
+import {LoginModalComponent} from "../LoginModal/LoginModal";
 
 export const HeaderComponent: React.FC = () => {
-    const handleClick = () => {
-        console.log('click');
-    }
+    const [isLoginModalVisible, setIsLoginModalVisible] = useState<boolean>(false)
 
-    return <div className='header__container' onClick={handleClick}>
+    return <div className='header__container'>
 
         <div className="position"> <a href="http://localhost:5173/"> <img className="MDApprenticeship" src="PicsArt_ (1).png"/> </a>
         </div>
@@ -17,6 +16,8 @@ export const HeaderComponent: React.FC = () => {
             <div className="LogInMargin"> Log in</div>
             <div className="SignUoMargin"> Sign Up</div>
         </div>
+
+        {isLoginModalVisible && (<LoginModalComponent/>)}
 
     </div>
 }
