@@ -39,20 +39,6 @@
     position: relative;
     display: inline-block;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 
 .LogInSignUp{
 
@@ -78,7 +64,7 @@
 
     font-size: 12px;
     background-color: white;
-    border: 2px solid lightseagreen;
+    border: 3px solid lightseagreen;
 }
 
 .MD{
@@ -89,17 +75,12 @@
     background-color: white;
     margin-top: -8px;
     padding: 1px;
-
 }
 
 
 .MetroDeutschland {
-
     width: 90px;
     height: 26px;
-
-
-
 }
 
 .flexmex{
@@ -111,16 +92,41 @@
 
 
 .colormolor{
-    width: 40px;
+    width: 35px;
     height: 30px;
 }
 
 .lupa{
     display: flex;
     align-content: center;
-
 }
 
 .menuicon{
-    padding: 15px 7px ;
+    padding: 0;
+    background-color: #043254;
+    width: 51px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.menuicon:hover {
+    background-color: inherit;
+}
+
+button
+
+.actionButton
+
+#buttonId
+
+
+
+
+
+
+
+
+
+

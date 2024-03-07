@@ -11,7 +11,7 @@ export const HeaderComponent: React.FC = () => {
 
 
         <div className="lupa">
-            <div className="menuicon"><img className="colormolor" src="menu icon.png"/></div>
+            <button className="menuicon"><img className="colormolor" src="menu icon123.png"/></button>
             <div className="position"><a href="http://localhost:5173/"> <img className="MDApprenticeship" src="PicsArt_ (1).png"/> </a> </div>
         </div>
 
