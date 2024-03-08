@@ -122,17 +122,6 @@
     background-color: inherit;
 }
 
-button
-
-.actionButton
-
-#buttonId
-
-
-.blurred {
-    filter: blur(5px); /* Указать нужную степень размытия */
-    pointer-events: none; /* Пропустить события мыши через размытый фон */
-}
 
 
 
