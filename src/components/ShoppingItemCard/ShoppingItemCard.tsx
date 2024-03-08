@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import './ShoppingItemCard.css';
+import {SkillCard} from "../../pages/HomePage/HomePage.tsx";
 
 type Props = {
-    item: {
-        skillName: string;
-        skillProgress: number;
-    }
+    item: SkillCard,
+    index: number,
+    onRemove: (index: number) => void
 }
 
-export const ShoppingCardComponent: React.FC<Props> = ({ item }) => {
-    const [level, setLevel] = useState(item.skillProgress);
+export const ShoppingCardComponent: React.FC<Props> = ({item, onRemove,index}) => {
+    const [level, setLevel] = useState(item.level);
     const filledSquares = Array(level).fill("filledSquare.png");
     const emptySquares = Array(10 - level).fill("emptySquare.png");
     const allSquares = filledSquares.concat(emptySquares);
@@ -21,22 +21,26 @@ export const ShoppingCardComponent: React.FC<Props> = ({ item }) => {
         setLevel(level - 1);
     }
 
+    const onRemoveHandleClick = () => {
+        onRemove(index)
+    }
+
     return (
         <div className='shoppingCardItem'>
             <div className="cardContent">
-                <div className="cardTitle">{item.skillName}</div>
+                <div className="cardTitle">{item.title}</div>
                 <div className="cardProgress">
-                   <img onClick={handleMinusClick} className="plusMinusButton" src="minusButton.png" alt="minus"/>
+                   <img onClick={handleMinusClick} className="plusMinusButton" src="minusButton.svg" alt="minus"/>
                     {allSquares.map((icon, index) => (
                         <img key={index} className="progressIcon" src={icon} alt="square" />
                     ))}
-                   <img onClick={handlePlusClick} className="plusMinusButton" src="plusButton.png" alt="plus"/>
+                   <img onClick={handlePlusClick} className="plusMinusButton" src="plusButton.svg" alt="plus"/>
                 </div>
                 <div className="progressTopic">"actual topic"</div>
                 <div className="cardNote">Notes:</div>
             </div>
             <div className="sidebar">
-                <a href="https://github.com/denitrip/metro-shopping-list"><img className="xButton" src="xButton.png" alt="x"/></a>
+                <img onClick={onRemoveHandleClick} className="xButton" src="xButton.png" alt="x"/>
             </div>
         </div>
     );
