@@ -32,7 +32,7 @@ export const HeaderComponent: React.FC = () => {
             <button className="buttonsize"> Sign Up</button>
         </div>
 
-        {isLoginModalVisible && (<LoginModalComponent/>)}
+        {isLoginModalVisible && (<LoginModalComponent setIsLoginModalVisible={setIsLoginModalVisible}/>)}
 
     </div>
 }
