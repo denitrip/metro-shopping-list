@@ -6,6 +6,10 @@ import {LoginModalComponent} from "../LoginModal/LoginModal";
 export const HeaderComponent: React.FC = () => {
     const [isLoginModalVisible, setIsLoginModalVisible] = useState<boolean>(false)
 
+    const handleLoginButtonClick = () => {
+        setIsLoginModalVisible(true)
+    }
+
     return <div className='header__container'>
 
 
@@ -24,7 +28,7 @@ export const HeaderComponent: React.FC = () => {
         </a></div>
 
         <div className="LogInSignUp">
-            <button className="buttonsize"> Log in</button>
+            <button className="buttonsize" onClick={handleLoginButtonClick}> Log in</button>
             <button className="buttonsize"> Sign Up</button>
         </div>
 
