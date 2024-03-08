@@ -49,6 +49,12 @@
     padding: 0 16px 0 0;
     /* padding: 18px 0px 0px 10px; */
     color: #f9f9f9;
+    a {
+        color: #05dcc8;
+    }
+    a: hover; {
+    color: #647deb;
+}
 }
 .LogInMargin{
     margin-right: 5px;
@@ -63,14 +69,15 @@
 .buttonsize{
 
     font-size: 12px;
-    background-color: white;
-    border: 3px solid lightseagreen;
+    background-color: #05dcc8;
+    border: 3px solid #05dcc8;
+
 }
 
 .MD{
     width: 55px;
     height: 28px;
-    border: 4px solid lightseagreen;
+    border: 4px solid white;
     border-radius: 5px;
     background-color: white;
     margin-top: -8px;
@@ -120,6 +127,12 @@ button
 .actionButton
 
 #buttonId
+
+
+.blurred {
+    filter: blur(5px); /* Указать нужную степень размытия */
+    pointer-events: none; /* Пропустить события мыши через размытый фон */
+}
 
 
 
