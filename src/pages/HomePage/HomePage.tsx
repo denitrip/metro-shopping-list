@@ -6,12 +6,12 @@ import {FooterComponent} from "../../components/Footer/Footer";
 import './HomePage.css'
 
 export const HomePageComponent: React.FC = () => {
-    const shoppingItems = [{skillname: 'Chat GPT', skillprogress: 9}, {skillname: 'Kotlin', skillprogress: 2}, {skillname: 'HTML', skillprogress: 4}, {skillname: 'CSS', skillprogress: 3}, {skillname: 'Java', skillprogress: 3}, {skillname: 'Git', skillprogress: 3}, {skillname: 'Typescript', skillprogress: 3},]
+    const shoppingItems = [{skillName: 'Chat GPT', skillProgress: 7}, {skillName: 'Kotlin', skillProgress: 2}, {skillName: 'HTML', skillProgress: 4}, {skillName: 'CSS', skillProgress: 3}, {skillName: 'Java', skillProgress: 3}, {skillName: 'Git', skillProgress: 3}, {skillName: 'Typescript', skillProgress: 3},]
 
     return <div className='container'>
         <HeaderComponent/>
         <div className="container__body">
-            {shoppingItems.map(item => <ShoppingCardComponent item={item}/>)}
+            {shoppingItems.map(item =><ShoppingCardComponent item={item}/>)}
         </div>
         <FooterComponent/>
     </div>

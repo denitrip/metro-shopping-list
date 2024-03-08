@@ -17,6 +17,9 @@
 
 }*/
 
+.button {
+
+}
 .cardContent {
     display: flex;
     flex-direction: column;
@@ -50,6 +53,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    button {
+        padding: 0;
+    }
 }
 
 .progressIcon {
